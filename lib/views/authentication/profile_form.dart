@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/views/authentication/privacy_setting_screen.dart';
 import 'package:flutterdemo/views/authentication/request_page.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -130,7 +131,7 @@ class _ProfileFormState extends State<ProfileForm> {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(() => RequestsPage());
+                  Get.to(() => PrivacySettingsScreen());
 
                   // Handle next button press
                 },

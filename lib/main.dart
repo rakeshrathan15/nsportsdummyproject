@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/views/authentication/account_setup_screen.dart';
 import 'package:flutterdemo/views/authentication/login_screen.dart';
 import 'package:flutterdemo/views/authentication/profile_form.dart';
 import 'package:flutterdemo/views/authentication/request_page.dart';
@@ -17,12 +18,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ProfileForm(),
+        home: AccountScreen(),
       );
     });
   }
